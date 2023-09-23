@@ -10,7 +10,6 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     ADD_BASKET = (By.XPATH, ".btn-lg.btn-primary")
-    PRODUCT_NAME = (By.XPATH, ".product_main>h1")
-    PRODUCT_ADDED = (By.XPATH, "#messages>.alert-safe:nth-child(1)>.alertinner>strong")
-    
-    
+    PRODUCT_NAME = (By.XPATH, "//*[@id='content_inner']/article/div[1]/div[2]/h1")
+    # PRODUCT_ADDED = (By.XPATH, "//*[@id='messages']/div[1]/div/strong")
+    SUCCESS_MESSAGE = (By.XPATH, "//*[@id='messages']/div[1]/div/strong")
