@@ -35,20 +35,20 @@ class ProductPage(BasePage):
         assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
         "Success message is presented, but should not be"
 
-    # def should_dissapear_of_success_message(self):
-    #     assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
-    #     "Success message is presented, but should not be"
+    def should_dissapear_of_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+        "Success message is presented, but should not be"
     
-    # def should_be_added_message(self):
-    #     assert self.is_element_present(*ProductPageLocators.PRODUCT_ADDED), "Product isn't added to basket" 
+    def should_be_added_message(self):
+        assert self.is_element_present(*ProductPageLocators.PRODUCT_ADDED), "Product isn't added to basket" 
    
-    # def should_be_product_name_in_added_message(self):
-    #     product_name_el = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME)
-    #     product_added_msg_el = self.browser.find_element(*ProductPageLocators.PRODUCT_ADDED)
-    #     product_name_text = product_name_el.text
-    #     product_added_text = product_added_msg_el.text
-    #     print(product_added_text)
-    #     print('!!!!!!!!!!!!!!!!!!!!!!!')
-    #     assert product_added_text == product_name_text, "Text doesn't contain product name"
+    def should_be_product_name_in_added_message(self):
+        product_name_el = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME)
+        product_added_msg_el = self.browser.find_element(*ProductPageLocators.PRODUCT_ADDED)
+        product_name_text = product_name_el.text
+        product_added_text = product_added_msg_el.text
+        print(product_added_text)
+        print('!!!!!!!!!!!!!!!!!!!!!!!')
+        assert product_added_text == product_name_text, "Text doesn't contain product name"
 
     
