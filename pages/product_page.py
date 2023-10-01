@@ -12,8 +12,9 @@ from .main_page import MainPage
 
 class ProductPage(BasePage):
     def should_be_added_in_basket(self):
-        add_button = self.browser.find_element(By.CSS_SELECTOR, ".add-to-basket")
-        add_button.click()
+        #add_button = self.browser.find_element(By.CSS_SELECTOR, ".add-to-basket")
+        add_button_el = self.browser.find_element(*ProductPageLocators.ADD_BUTTON)
+        add_button_el.click()
         self.solve_quiz_and_get_code()
 
     def solve_quiz_and_get_code(self):

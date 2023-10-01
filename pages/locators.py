@@ -13,6 +13,7 @@ class ProductPageLocators():
     PRODUCT_NAME = (By.XPATH, "//*[@id='content_inner']/article/div[1]/div[2]/h1")
     # PRODUCT_ADDED = (By.XPATH, "//*[@id='messages']/div[1]/div/strong")
     SUCCESS_MESSAGE = (By.XPATH, "//*[@id='messages']/div[1]/div/strong")
+    ADD_BUTTON = (By.CSS_SELECTOR, ".add-to-basket")
 
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
