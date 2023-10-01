@@ -42,8 +42,6 @@ class TestUserAddToBasketFromProductPage():
         product_page.should_be_added_in_basket()    
 
 @pytest.mark.need_review
-@pytest.mark.skip
-@pytest.mark.xfail
 def test_guest_can_add_product_to_basket(browser):
     page = ProductPage(browser, link)
     page.open()

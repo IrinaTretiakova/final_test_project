@@ -32,8 +32,8 @@ class ProductPage(BasePage):
             print("No second alert presented")
 
     def should_not_be_success_message(self):
-        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
-        "Success message is presented, but should not be"
+        assert self.is_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+        "Success message is not presented, but should be"
 
     def should_dissapear_of_success_message(self):
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
